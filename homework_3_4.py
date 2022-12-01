@@ -1,6 +1,11 @@
 def replace_name_function(name_func, *args):
     full_name = name_func.__name__.title().replace("_", " ")
-    print(full_name, *args)
+    #print(full_name, *args, sep=' - ')
+
+    print('\n------------------')
+    print(f"Name of function: {full_name.replace('_', ' ')} ")
+    print('Args:', *args)
+    print('------------------')
 
 
 def open_browser(browser_name):
